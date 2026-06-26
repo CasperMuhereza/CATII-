@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Our Wildlife</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page" aria-labelledby="page-title">
+      <h1 id="page-title">Save Our Wildlife</h1>
+
+      <section
+        class="video-section"
+        aria-label="Wildlife promotional video section"
+      >
+        <video
+          id="wildlifeVideo"
+          controls
+          preload="metadata"
+          aria-describedby="videoDescription"
+        >
+          <source src="wildlife.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <p id="videoDescription">
+          Wildlife conservation protects endangered species, restores habitats,
+          and helps keep ecosystems healthy for future generations.
+        </p>
+
+        <button
+          id="videoActionBtn"
+          type="button"
+          aria-controls="wildlifeVideo"
+          aria-pressed="false"
+        >
+          Hide Video
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
